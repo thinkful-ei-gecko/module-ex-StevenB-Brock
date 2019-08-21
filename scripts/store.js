@@ -3,7 +3,7 @@
 const store = (function () {
   const items = [];
   let hideCheckedItems = false;
-  let searchTerm = ' ';
+  let searchTerm = '';
 
   return {
     items,
