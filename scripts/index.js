@@ -17,23 +17,6 @@
 function main() {
   shoppingList.bindEventListeners();
   shoppingList.render();
-
-  const itemNames = [ '', 'apples', 'pears' ];
-
-  itemNames.forEach(name => {
-
-    try {
-      Item.validateName(name);
-      store.items.push(Item.create(name));
-      //console.log(store.items);
-    } catch(error) {
-      console.log('Cannot add item: ' + error.message);
-    }
-  });
-
-  shoppingList.bindEventListeners();
-  shoppingList.render();
-
 }
 
 $(main);
